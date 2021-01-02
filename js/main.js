@@ -5,10 +5,13 @@ const tabContentItems = document.querySelectorAll('.tab-content-item');
 function selectItem(e) {
     // remove all border before adding the red border into tab
     removeBorder();
+
     // remove all content
     removeShow();
+
     // add border to current tab
     this.classList.add('tab-border');
+    
     // grab content item from DOM
     const tabContentItem = document.querySelector(`#${this.id}-content`);
     tabContentItem.classList.add('show');
